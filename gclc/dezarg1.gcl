@@ -1,0 +1,112 @@
+dim 150 130
+mcr 0.4
+
+animation_frames 1000 100
+
+color 255 64 64
+linethickness 0.36
+point S 12 35 17 25
+cmark_lt S
+normal
+color 0 0 0
+
+point x1 150 80 150 20
+point x2 150 130 155 120
+point x3 80 150 120 150
+
+line l1 S x1
+line l2 S x2
+line l3 S x3
+
+drawline l1
+drawline l2
+drawline l3
+
+% mb = moving bottom
+% mt = moving top
+% m = moving
+point a1mb 15 0 30 0
+point a1mt 15 100 30 100
+line a1m a1mb a1mt
+
+point b1mb 50 0 70 0
+point b1mt 50 100 70 100
+line b1m b1mb b1mt
+
+point c1mb 28 0 25 0
+point c1mt 28 100 25 100
+line c1m c1mb c1mt
+
+point a2mb 55 0 100 0
+point a2mt 55 100 100 100
+line a2m a2mb a2mt
+
+point b2mb 75 0 60 0
+point b2mt 75 100 60 100
+line b2m b2mb b2mt
+
+point c2mb 45 0 40 0
+point c2mt 45 100 40 100
+line c2m c2mb c2mt
+
+intersec A1 l1 a1m
+intersec B1 l2 b1m
+intersec C1 l3 c1m
+intersec A2 l1 a2m
+intersec B2 l2 b2m
+intersec C2 l3 c2m
+
+color  70 175 255
+filltriangle A1 B1 C1
+filltriangle A2 B2 C2
+color 0 0 0
+
+linethickness 0.42
+cmark_rb A1
+cmark_t B1
+cmark_lb C1
+cmark_b A2
+cmark_r B2
+cmark_lb C2
+
+drawsegment A1 B1
+drawsegment A1 C1
+drawsegment C1 B1
+drawsegment A2 B2
+drawsegment A2 C2
+drawsegment C2 B2
+normal
+
+line p1 A1 B1
+line p2 A2 B2
+line q1 B1 C1
+line q2 B2 C2
+line r1 A1 C1
+line r2 A2 C2
+
+intersec P p1 p2
+intersec Q q1 q2
+intersec R r1 r2
+line x P Q
+
+color 255 64 64
+linethickness 0.36
+cmark_b P
+cmark_l Q
+cmark_rt R
+drawline x
+normal
+color 0 0 0
+
+color  170 0 127
+linethickness 0.30
+drawsegment A1 P
+drawsegment A2 P
+drawsegment C1 Q
+drawsegment C2 Q
+drawsegment A1 R
+drawsegment A2 R
+normal
+color 0 0 0
+
+
