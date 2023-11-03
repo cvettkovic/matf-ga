@@ -1,5 +1,5 @@
 # GCLC
-Projekat iz GCLC-a, na temu "Dezargovo i Paposovo tvrđenje." Rađene su animacije na ove dve teme koje ilustruu teoreme.
+Projekat iz GCLC-a, na temu "Dezargovo i Paposovo tvrđenje." Rađene su animacije na ove dve teme koje ilustruju teoreme.
 
 ## Dezargovo tvrđenje
 * Prva animacija demonstrira da Dezargovo tvrđenje važi i kada se dogodi da se trotemenici "seku" i da se u tom slučaju tačke incidentne njihovoj osi nalaze baš na secištima spojnica odgovarajućih tačaka, kao i da se mogu desiti situacije da se dva temena poklope, u kom slučaju se dve tačke ose takođe poklapaju (međusobno a i sa tim temenima).
