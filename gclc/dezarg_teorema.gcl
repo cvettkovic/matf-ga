@@ -1,0 +1,33 @@
+point S 0 0
+
+point X1 100 0
+point X2 0 100
+
+online T1 X1 X2
+online T2 X1 X2
+online T3 X1 X2
+
+online A1 S T1
+online A2 S T2
+
+online B1 S T1
+online B2 S T2
+
+online C1 S T1
+online C2 S T2
+
+line p1 A1 B1
+line p2 A2 B2
+intersec P p1 p2
+
+line q1 A1 C1
+line q2 A2 C2
+intersec Q q1 q2
+
+line r1 B1 C1
+line r2 B2 C2
+intersec R r1 r2
+
+theorem_name { dezarg }
+prove { collinear P Q R }
+

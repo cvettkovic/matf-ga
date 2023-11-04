@@ -1,0 +1,84 @@
+\documentclass[a4paper]{article}
+\usepackage{gclc_proof}
+
+
+\begin{document}
+
+
+	Let $r_{0}$ be the number such that {\tt PRATIO} $T1$ $X1$ $X1$ $X2$ $r_{0}$ (for the concrete example $r_{0}$=1.23981).
+
+	Let $r_{1}$ be the number such that {\tt PRATIO} $T2$ $X1$ $X1$ $X2$ $r_{1}$ (for the concrete example $r_{1}$=-0.477676).
+
+	Let $r_{2}$ be the number such that {\tt PRATIO} $T3$ $X1$ $X1$ $X2$ $r_{2}$ (for the concrete example $r_{2}$=1.57683).
+
+	Let $r_{3}$ be the number such that {\tt PRATIO} $A1$ $S$ $S$ $T1$ $r_{3}$ (for the concrete example $r_{3}$=1.1315).
+
+	Let $r_{4}$ be the number such that {\tt PRATIO} $A2$ $S$ $S$ $T2$ $r_{4}$ (for the concrete example $r_{4}$=0.540605).
+
+	Let $r_{5}$ be the number such that {\tt PRATIO} $B1$ $S$ $S$ $T1$ $r_{5}$ (for the concrete example $r_{5}$=-0.0880154).
+
+	Let $r_{6}$ be the number such that {\tt PRATIO} $B2$ $S$ $S$ $T2$ $r_{6}$ (for the concrete example $r_{6}$=-0.955046).
+
+	Let $r_{7}$ be the number such that {\tt PRATIO} $C1$ $S$ $S$ $T1$ $r_{7}$ (for the concrete example $r_{7}$=-0.725791).
+
+	Let $r_{8}$ be the number such that {\tt PRATIO} $C2$ $S$ $S$ $T2$ $r_{8}$ (for the concrete example $r_{8}$=0.0933561).
+
+\vspace*{2mm} \hrule \vspace*{2mm} 
+\title{GCLC Prover Output for conjecture `` dezarg '' }
+
+\author{Area method used}
+
+\maketitle
+
+
+
+\begin{displayproof}
+\proofstep{ S_{PQR}}{=}{ 0 }{by the statement}{0=0}
+\proofstep{ \frac{ \left( \left( S_{B1B2C2} \cdot  S_{PQC1}\right) +  \left( -1  \cdot  \left( S_{C1B2C2} \cdot  S_{PQB1}\right)\right)\right)}{ S_{B1B2C1C2}}}{=}{ 0 }{by Lemma 30 (point $R$ eliminated)}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  S_{PQC1}\right) +  \left( -1  \cdot  \left( S_{C1B2C2} \cdot  S_{PQB1}\right)\right)\right)}{=}{ 0 }{by algebraic simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  S_{C1PQ}\right) +  \left( -1  \cdot  \left( S_{C1B2C2} \cdot  S_{B1PQ}\right)\right)\right)}{=}{ 0 }{by geometric simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \frac{ \left( \left( S_{A1A2C2} \cdot  S_{C1PC1}\right) +  \left( -1  \cdot  \left( S_{C1A2C2} \cdot  S_{C1PA1}\right)\right)\right)}{ S_{A1A2C1C2}}\right) +  \left( -1  \cdot  \left( S_{C1B2C2} \cdot  S_{B1PQ}\right)\right)\right)}{=}{ 0 }{by Lemma 30 (point $Q$ eliminated)}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \frac{ \left( \left( S_{A1A2C2} \cdot  0 \right) +  \left( -1  \cdot  \left( S_{C1A2C2} \cdot  S_{C1PA1}\right)\right)\right)}{ S_{A1A2C1C2}}\right) +  \left( -1  \cdot  \left( S_{C1B2C2} \cdot  S_{B1PQ}\right)\right)\right)}{=}{ 0 }{by geometric simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  S_{C1PA1}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{B1PQ} \cdot  S_{A1A2C1C2}\right)\right)\right)}{=}{ 0 }{by algebraic simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  S_{C1PA1}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( \frac{ \left( \left( S_{A1A2C2} \cdot  S_{B1PC1}\right) +  \left( -1  \cdot  \left( S_{C1A2C2} \cdot  S_{B1PA1}\right)\right)\right)}{ S_{A1A2C1C2}} \cdot  S_{A1A2C1C2}\right)\right)\right)}{=}{ 0 }{by Lemma 30 (point $Q$ eliminated)}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  S_{C1PA1}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( \frac{ \left( \left( S_{A1A2C2} \cdot  S_{B1PC1}\right) +  \left( -1  \cdot  \left( S_{C1A2C2} \cdot  0 \right)\right)\right)}{ S_{A1A2C1C2}} \cdot  S_{A1A2C1C2}\right)\right)\right)}{=}{ 0 }{by geometric simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  S_{C1PA1}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  S_{B1PC1}\right)\right)\right)}{=}{ 0 }{by algebraic simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  S_{A1C1P}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  S_{C1B1P}\right)\right)\right)}{=}{ 0 }{by geometric simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  \frac{ \left( \left( S_{A1A2B2} \cdot  S_{A1C1B1}\right) +  \left( -1  \cdot  \left( S_{B1A2B2} \cdot  S_{A1C1A1}\right)\right)\right)}{ S_{A1A2B1B2}}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  S_{C1B1P}\right)\right)\right)}{=}{ 0 }{by Lemma 30 (point $P$ eliminated)}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  \frac{ \left( \left( S_{A1A2B2} \cdot  S_{A1C1B1}\right) +  \left( -1  \cdot  \left( S_{B1A2B2} \cdot  0 \right)\right)\right)}{ S_{A1A2B1B2}}\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  S_{C1B1P}\right)\right)\right)}{=}{ 0 }{by geometric simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  \left( S_{A1A2B2} \cdot  S_{A1C1B1}\right)\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  \left( S_{C1B1P} \cdot  S_{A1A2B1B2}\right)\right)\right)\right)}{=}{ 0 }{by algebraic simplifications}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  \left( S_{A1A2B2} \cdot  S_{A1C1B1}\right)\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  \left( \frac{ \left( \left( S_{A1A2B2} \cdot  S_{C1B1B1}\right) +  \left( -1  \cdot  \left( S_{B1A2B2} \cdot  S_{C1B1A1}\right)\right)\right)}{ S_{A1A2B1B2}} \cdot  S_{A1A2B1B2}\right)\right)\right)\right)}{=}{ 0 }{by Lemma 30 (point $P$ eliminated)}{0=0}
+\proofstep{ \left( \left( S_{B1B2C2} \cdot  \left( S_{C1A2C2} \cdot  \left( S_{A1A2B2} \cdot  S_{A1C1B1}\right)\right)\right) +  \left( S_{C1B2C2} \cdot  \left( S_{A1A2C2} \cdot  \left( \frac{ \left( \left( S_{A1A2B2} \cdot  0 \right) +  \left( -1  \cdot  \left( S_{B1A2B2} \cdot  S_{A1C1B1}\right)\right)\right)}{ S_{A1A2B1B2}} \cdot  S_{A1A2B1B2}\right)\right)\right)\right)}{=}{ 0 }{by geometric simplifications}{0=0}
+\proofstep{ 0 }{=}{ 0 }{by algebraic simplifications}{0=0}
+\end{displayproof}
+
+
+\proveddisproved{1}
+
+
+NDG conditions are:
+
+$ S_{A1A2B2}\neq S_{B1A2B2}$ i.e., lines $A1B1$ and $A2B2$ are not parallel (construction based assumption)
+
+$ S_{A1A2C2}\neq S_{C1A2C2}$ i.e., lines $A1C1$ and $A2C2$ are not parallel (construction based assumption)
+
+$ S_{B1B2C2}\neq S_{C1B2C2}$ i.e., lines $B1C1$ and $B2C2$ are not parallel (construction based assumption)
+
+
+\vspace*{2mm} \hrule \vspace*{2mm} 
+
+
+Number of elimination proof steps:     10
+
+Number of geometric proof steps:       24
+
+Number of algebraic proof steps:       70
+
+Total number of proof steps:          104
+
+
+Time spent by the prover: 0.000 seconds
+
+
+\end{document}
+

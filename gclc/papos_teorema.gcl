@@ -1,0 +1,35 @@
+point S 0 0
+
+point X1 100 0
+point X2 0 100
+
+online T1 X1 X2
+online T2 X1 X2
+
+online A1 S T1
+online B1 S T1
+online C1 S T1
+
+online A2 S T2
+online B2 S T2
+online C2 S T2
+
+line a1 C1 B2
+line a2 C2 B1
+
+line b1 A1 C2
+line b2 A2 C1
+
+line c1 A1 B2
+line c2 A2 B1
+
+intersec A a1 a2
+intersec B b1 b2
+intersec C c1 c2
+
+theorem_name { papos }
+prover_timeout 90000
+prooflimit 20000
+prove { collinear A B C }
+
+
