@@ -1,11 +1,10 @@
+#include <queue>
+
 namespace Pycoas {
-    static class Solver {
+    class Solver {
     public:
-        static void Solve(double& discs) {
+        static void Solve(std::vector<double>& discs) {
             
         }
-
-    private:
-        
     };
 }
